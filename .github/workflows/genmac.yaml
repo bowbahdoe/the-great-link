@@ -1,0 +1,18 @@
+name: Generate "The Great Link" for MacOS
+'on':
+  workflow_dispatch:
+  schedule:
+    - cron: 7 2 * * *
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '23'
+          distribution: 'adopt'
+      - uses: extractions/setup-just@v2
+      - name: get dependencies
+        run: just verify

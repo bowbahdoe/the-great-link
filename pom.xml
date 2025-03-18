@@ -14,13 +14,13 @@
         <dependency>
             <groupId>dev.mccue</groupId>
             <artifactId>tools-jdk</artifactId>
-            <version>2024.09.03</version>
+            <version>2025.01.31</version>
         </dependency>
 
         <dependency>
             <groupId>dev.mccue</groupId>
             <artifactId>tools-junit</artifactId>
-            <version>2024.09.03</version>
+            <version>2025.01.31</version>
         </dependency>
 
         <dependency>
