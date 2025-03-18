@@ -1,4 +1,4 @@
-name: Generate "The Great Link" for MacOS
+name: Generate "The Great Link" for Ubuntu
 'on':
   workflow_dispatch:
   schedule:
