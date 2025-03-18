@@ -50,5 +50,6 @@ jobs:
   make_release:
     runs-on: ubuntu-latest
     depends_on: [ build_macos, build_linux, build_windows ]
-    run:
-      echo "Hello, world"
+    steps:
+      - run:
+          echo "Hello, world"
