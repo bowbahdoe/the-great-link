@@ -1,0 +1,60 @@
+import dev.mccue.tools.jar.Jar;
+import dev.mccue.tools.java.Java;
+
+import java.io.ByteArrayOutputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class GetModules {
+    public static Collection<String> getNames() throws Exception {
+        var moduleNames = new LinkedHashSet<String>();
+        try (var filesStream = Files.list(Path.of("target", "dependency"))) {
+            var files = filesStream.collect(Collectors.toList());
+            for (var file : files)
+            {
+                var baos = new ByteArrayOutputStream();
+                var runner = Jar.runner();
+                runner.echoCommand(false);
+                runner.redirectOutput(baos);
+                runner.arguments()
+                        .__file(file).__describe_module().__release(9);
+                runner.run();
+
+                var output = baos.toString();
+                if (output.startsWith("releases:")) {
+                    output = output.replaceAll("releases:.+\n", "").strip();
+                }
+                var moduleName = output.split("\n")[0].split("([@ ])")[0];
+                moduleNames.add(moduleName);
+                if (output.contains("releases")) {
+                    System.out.println(output);
+                }
+            }
+        }
+
+        var baos = new ByteArrayOutputStream();
+        var runner = Java.runner();
+        runner.echoCommand(false);
+        runner.redirectOutput(baos);
+        runner.arguments().__list_modules();
+        runner.run();
+
+        for (var moduleNameAndVersion : baos.toString().split("\n")) {
+            moduleNames.add(moduleNameAndVersion.split("@")[0]);
+        }
+
+        return moduleNames;
+    }
+
+    public static void main(String[] args) throws Exception {
+        var moduleNames = getNames();
+
+        System.out.println(String.join(",", moduleNames));
+
+    }
+}
