@@ -47,3 +47,8 @@ jobs:
       - name: Generate Linked Image
         run:
           jlink --output target/generate --module-path target/dependency --add-modules "@modnames.txt" --bind-services --launcher update4j=org.update4j/org.update4j.Bootstrap
+  make_release:
+    runs-on: ubuntu-latest
+    depends_on: [ build_macos, build_linux, build_windows ]
+    run:
+      echo "Hello, world"
