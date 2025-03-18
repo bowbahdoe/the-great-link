@@ -54,7 +54,12 @@ public class GetModules {
     public static void main(String[] args) throws Exception {
         var moduleNames = getNames();
 
-        System.out.println(String.join(",", moduleNames));
+        var joinedNames = String.join(",", moduleNames);
+        if (args.length > 0) {
+            Files.writeString(Path.of(args[0]), joinedNames);
+        }
+
+        System.out.println(joinedNames);
 
     }
 }
