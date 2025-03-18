@@ -49,7 +49,7 @@ jobs:
           jlink --output target/generate --module-path target/dependency --add-modules "@modnames.txt" --bind-services --launcher update4j=org.update4j/org.update4j.Bootstrap
   make_release:
     runs-on: ubuntu-latest
-    needs: [ build_macos, build_linux, build_windows ]
+    needs: [ build_macos, build_ubuntu, build_windows ]
     steps:
       - run:
           echo "Hello, world"
