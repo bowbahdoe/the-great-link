@@ -114,5 +114,5 @@ That last step won't work yet, but if it did then there would be basically no do
 * The licensing info of the JDK this is derived from is copied over into
 the image this creates. 
 * All 3rd party libraries have licensing specified in their POMs
-and you can find a generated report on that licensing [here]().
-It is all Apache, MIT, LGPL, BSD-2
+and you can find a generated report on that licensing [here](https://musical-meringue-598fed.netlify.app/aggregate-third-party-report)
+and in the target/reports folder.
