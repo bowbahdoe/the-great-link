@@ -5,7 +5,7 @@ name: Generate "The Great Link" for MacOS
     - cron: 7 2 * * *
 jobs:
   publish:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Set up Java
