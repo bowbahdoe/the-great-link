@@ -16,7 +16,7 @@ jobs:
       - uses: extractions/setup-just@v2
       - name: Get all Dependencies
         run:
-          mvnw.cmd dependency:copy-dependencies
+          ./mvnw.cmd dependency:copy-dependencies
       - name: Generate List of Module Names
         run:
           java -p target/dependency --add-modules ALL-MODULE-PATH scripts/GetModules.java modnames.txt
