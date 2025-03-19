@@ -90,7 +90,7 @@ jobs:
       - name: Set current date as env variable
         run: echo "NOW=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
       - name: Echo current date
-        run: echo $NOW # Gives "2022-12-11"
+        run: echo $NOW
       - name: List Files
         run:
           tree
@@ -98,5 +98,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           name: 'RELEASE_EXAMPLE'
+          tag_name: "$NOW"
           files:
             windowsimg/windowsimg.zip
