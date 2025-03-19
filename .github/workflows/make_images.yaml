@@ -99,5 +99,6 @@ jobs:
         with:
           name: ${{ vars.NOW }}
           tag_name: ${{ vars.NOW }}
+          target_commitish: main
           files:
             windowsimg/windowsimg.zip
