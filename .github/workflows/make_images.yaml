@@ -94,6 +94,10 @@ jobs:
       - name: List Files
         run:
           tree
+      - name: Create Tag
+        id: create_tag
+        uses: jaywcjlove/create-tag-action@main
+        version: ${{ vars.NOW }}
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
