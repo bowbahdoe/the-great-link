@@ -75,5 +75,13 @@ jobs:
     runs-on: ubuntu-latest
     needs: [ build_macos, build_ubuntu, build_windows ]
     steps:
-      - run:
-          echo "Hello, world"
+      - name: Download a single artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: windowsimg
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: 'RELEASE_EXAMPLE'
+          files:
+            windowsimg/windowsimg.zip
