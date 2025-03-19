@@ -98,6 +98,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           name: 'RELEASE_EXAMPLE'
-          tag_name: {{ $NOW }}
+          tag_name: {{ vars.NOW }}
           files:
             windowsimg/windowsimg.zip
