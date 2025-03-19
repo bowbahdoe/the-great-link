@@ -87,6 +87,10 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: windowsimg
+      - name: Set current date as env variable
+        run: echo "NOW=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+      - name: Echo current date
+        run: echo $NOW # Gives "2022-12-11"
       - name: List Files
         run:
           tree
