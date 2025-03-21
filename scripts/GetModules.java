@@ -4,25 +4,22 @@ import dev.mccue.tools.java.Java;
 import java.io.ByteArrayOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class GetModules {
     public static Collection<String> getNames() throws Exception {
         var moduleNames = new LinkedHashSet<String>();
         try (var filesStream = Files.list(Path.of("target", "dependency"))) {
-            var files = filesStream.collect(Collectors.toList());
+            var files = filesStream.toList();
             for (var file : files)
             {
                 var baos = new ByteArrayOutputStream();
-                var runner = Jar.runner();
+                var runner = Jar.runner(a ->{});
                 runner.echoCommand(false);
                 runner.redirectOutput(baos);
                 runner.arguments()
-                        .__file(file).__describe_module().__release(9);
+                        .__file(file).__describe_module().__release(21);
                 runner.run();
 
                 var output = baos.toString();

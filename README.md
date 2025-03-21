@@ -43,12 +43,13 @@ in The Great Link.
 
 * The licensing must allow for it.
 * The library must be directly usable with `jlink` so that it may be linked.
-* It can't step on the toes of any other libraries. For example, there can only be one logging implementation.
+* It can't step on the toes of any other libraries. For example, there can only be [one logging implementation](https://github.com/jstachio/rainbowgum).
 * It must pass my rigorous "looks good to me" test. This is a test where the me is I and it must to I look good to me.
 
 
 This means that there are some honestly pretty useless libraries not included - like "The Postgres JDBC Driver" and "All of Spring."
-This is clearly their loss. If you care take it up with them.
+This is clearly their loss. If you care, [take it up with them](https://github.com/spring-projects/spring-framework/issues/18079) and
+be prepared to do some work yourself.
 
 ## How to Drink The Link
 
@@ -74,9 +75,10 @@ That last step won't work yet, but if it did then there would be basically no do
 * [Read and Write JSON classically](https://github.com/stleary/JSON-java)
 * [Read and Write JSON declaratively](https://github.com/bowbahdoe/json)
 * [Invert the Reflection API](https://github.com/classgraph/classgraph)
-* [Read and Write TOML reflectively]
+* [Read and Write TOML reflectively](https://github.com/FasterXML/jackson-dataformats-text)
 * [Validate Password Strength](https://github.com/nulab/zxcvbn4j)
-* [Read and Write YAML reflectively]
+* [Read and Write YAML reflectively](https://github.com/FasterXML/jackson-dataformats-text)
+* [Read and Write JSON alibabaly](https://github.com/alibaba/fastjson2/blob/main/README_EN.md)
 * [Make Emails that Look Good Everywhere](https://github.com/digitalfondue/mjml4j)
 * [Render Mustache Templates](https://github.com/samskivert/jmustache)
 * [Read and Write CSV reflectively](https://github.com/FasterXML/jackson-dataformats-text)
@@ -96,6 +98,7 @@ That last step won't work yet, but if it did then there would be basically no do
 * [Pool Database Connections](https://github.com/brettwooldridge/HikariCP)
 * [Read from `.env` Files](https://github.com/cdimascio/dotenv-java)
 * [Parse HTML5](https://github.com/digitalfondue/jfiveparse)
+* [Parse Messy Real-World HTML](https://jsoup.org/)
 * [Read and Write Property Files Preserving Comments and Whitespace](https://github.com/poiu-de/apron)
 * [Connect to MariaDB](https://github.com/mariadb-corporation/mariadb-connector-j/tree/master)
 * [Log Good](https://github.com/jstachio/rainbowgum)
@@ -106,6 +109,12 @@ That last step won't work yet, but if it did then there would be basically no do
 * [Play MP3 and OGG Files](https://github.com/bowbahdoe/java-audio-stack)
 * [Write PPM Format Images](https://github.com/bowbahdoe/ppm)
 * [Update Shared Data with an Atomic-Compare-And-Swap](https://github.com/bowbahdoe/atom)
+* [Intercept your HTTP Requests](https://github.com/raphw/interceptable-http-client)
+* [Analyze Jar Files](https://github.com/kordamp/jarviz)
+* [Make Modern Looking Swing Apps](https://github.com/JFormDesigner/FlatLaf)
+* [Do Math with Uncertain Values](https://github.com/mihxil/math)
+* [Generate and Validate International Bank Account Numbers](https://github.com/arturmkrtchyan/iban4j)
+* [Automatically Bind GUIs to Objects](https://www.autogui.org/)
 * And More!
 
 ## Licensing

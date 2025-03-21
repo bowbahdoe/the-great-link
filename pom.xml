@@ -36,11 +36,18 @@
             <version>2024.11.20</version>
         </dependency>
 
+        <!-- https://github.com/bowbahdoe/json-jackson -->
+        <dependency>
+            <groupId>dev.mccue</groupId>
+            <artifactId>json-jackson</artifactId>
+            <version>2025.02.02</version>
+        </dependency>
+
         <!-- https://github.com/bowbahdoe/jdbc -->
         <dependency>
             <groupId>dev.mccue</groupId>
             <artifactId>jdbc</artifactId>
-            <version>2024.12.20</version>
+            <version>2025.03.09</version>
         </dependency>
 
         <!-- https://github.com/jstachio/rainbowgum -->
@@ -53,19 +60,19 @@
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-http-spi</artifactId>
-            <version>12.0.18</version>
+            <version>12.1.0.alpha2</version>
         </dependency>
 
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
-            <version>12.0.18</version>
+            <version>12.1.0.alpha2</version>
         </dependency>
 
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-client</artifactId>
-            <version>12.0.18</version>
+            <version>12.1.0.alpha2</version>
         </dependency>
 
         <dependency>
@@ -121,28 +128,28 @@
         <dependency>
             <groupId>com.github.slugify</groupId>
             <artifactId>slugify</artifactId>
-            <version>3.0.5</version>
+            <version>3.0.7</version>
         </dependency>
 
         <!-- https://github.com/brettwooldridge/HikariCP -->
         <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
-            <version>6.2.0</version>
+            <version>6.2.1</version>
         </dependency>
 
         <!-- https://github.com/JetBrains/java-annotations -->
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
-            <version>26.0.0</version>
+            <version>26.0.2</version>
         </dependency>
 
         <!-- https://github.com/cdimascio/dotenv-java -->
         <dependency>
             <groupId>io.github.cdimascio</groupId>
             <artifactId>dotenv-java</artifactId>
-            <version>3.0.0</version>
+            <version>3.2.0</version>
         </dependency>
 
         <dependency>
@@ -170,6 +177,7 @@
             <version>2.18.3</version>
         </dependency>
 
+        <!-- https://github.com/FasterXML/jackson-dataformats-text -->
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-yaml</artifactId>
@@ -182,6 +190,7 @@
             <version>2.18.3</version>
         </dependency>
 
+        <!-- https://github.com/FasterXML/jackson-dataformats-text -->
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-toml</artifactId>
@@ -270,7 +279,7 @@
         <dependency>
             <groupId>com.sanctionco.jmail</groupId>
             <artifactId>jmail</artifactId>
-            <version>1.6.2</version>
+            <version>1.6.3</version>
         </dependency>
 
         <!-- https://github.com/poiu-de/apron -->
@@ -342,7 +351,7 @@
         <dependency>
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>
-            <version>3.46.0.0</version>
+            <version>3.49.1.0</version>
         </dependency>
 
         <!-- https://vavr.io/ -->
@@ -387,7 +396,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-csv</artifactId>
-            <version>1.13.0</version>
+            <version>1.14.0</version>
         </dependency>
 
         <!-- https://commons.apache.org/proper/commons-pool/ -->
@@ -414,7 +423,7 @@
         <dependency>
             <groupId>com.nulab-inc</groupId>
             <artifactId>zxcvbn</artifactId>
-            <version>1.8.2</version>
+            <version>1.9.0</version>
         </dependency>
 
         <!-- https://github.com/bowbahdoe/flake -->
@@ -434,7 +443,7 @@
         <dependency>
             <groupId>net.e175.klaus</groupId>
             <artifactId>solarpositioning</artifactId>
-            <version>2.0.3</version>
+            <version>2.0.4</version>
         </dependency>
 
         <!-- https://github.com/felldo/JEmoji -->
@@ -476,7 +485,7 @@
         <dependency>
             <groupId>dev.mccue</groupId>
             <artifactId>ppm</artifactId>
-            <version>2024.10.13</version>
+            <version>2025.01.17</version>
         </dependency>
 
         <!-- https://github.com/bowbahdoe/atom -->
@@ -503,7 +512,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.9.0</version>
+            <version>5.12.1</version>
         </dependency>
 
         <!-- https://github.com/stleary/JSON-java -->
@@ -554,6 +563,87 @@
             <version>3.0.1</version>
         </dependency>
 
+        <!-- https://github.com/raphw/interceptable-http-client -->
+        <dependency>
+            <groupId>codes.rafael.interceptablehttpclient</groupId>
+            <artifactId>interceptable-http-client</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- https://github.com/alibaba/fastjson2/blob/main/README_EN.md -->
+        <dependency>
+            <groupId>com.alibaba.fastjson2</groupId>
+            <artifactId>fastjson2</artifactId>
+            <version>2.0.56</version>
+        </dependency>
+
+        <!-- https://jsoup.org/ -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.19.1</version>
+        </dependency>
+
+        <!-- https://github.com/kordamp/jarviz -->
+        <dependency>
+            <groupId>org.kordamp.jarviz</groupId>
+            <artifactId>jarviz-tool-provider</artifactId>
+            <version>0.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.kordamp.jarviz</groupId>
+            <artifactId>jarviz-cli</artifactId>
+            <version>0.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.kordamp.jarviz</groupId>
+            <artifactId>jarviz-core</artifactId>
+            <version>0.3.0</version>
+        </dependency>
+
+        <!-- https://github.com/mihxil/math -->
+        <dependency>
+            <groupId>org.meeuw.math</groupId>
+            <artifactId>mihxil-math</artifactId>
+            <version>0.14.0</version>
+        </dependency>
+
+        <!-- https://github.com/mihxil/math -->
+        <dependency>
+            <groupId>org.meeuw.math</groupId>
+            <artifactId>mihxil-physics</artifactId>
+            <version>0.14.0</version>
+        </dependency>
+
+        <!-- https://github.com/mihxil/math -->
+        <dependency>
+            <groupId>org.meeuw.math</groupId>
+            <artifactId>mihxil-statistics</artifactId>
+            <version>0.14.0</version>
+        </dependency>
+
+        <!-- https://github.com/mihxil/math -->
+        <dependency>
+            <groupId>org.meeuw.math</groupId>
+            <artifactId>mihxil-algebra</artifactId>
+            <version>0.14.0</version>
+        </dependency>
+
+        <!-- https://www.autogui.org/ -->
+        <dependency>
+            <groupId>org.autogui</groupId>
+            <artifactId>autogui</artifactId>
+            <version>1.7</version>
+        </dependency>
+
+        <!-- https://github.com/bowbahdoe/jstage -->
+        <dependency>
+            <groupId>dev.mccue</groupId>
+            <artifactId>jstage</artifactId>
+            <version>2024.07.19</version>
+        </dependency>
 
         <!--
         <dependency>
@@ -746,6 +836,11 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.18.0</version>
             </plugin>
         </plugins>
 

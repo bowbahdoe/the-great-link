@@ -31,8 +31,9 @@ generate: copy_deps
         --module-path target/dependency \
         --add-modules $(java -p target/dependency --add-modules ALL-MODULE-PATH scripts/GetModules.java) \
         --bind-services \
-        --launcher update4j=org.update4j/org.update4j.Bootstrap
-
+        --launcher update4j=org.update4j/org.update4j.Bootstrap \
+        --launcher jarviz=org.kordamp.jarviz.cli/org.kordamp.jarviz.cli.Main \
+        --launcher jstage=dev.mccue.jstage/dev.mccue.jstage.JStage
 
 gen_licenses_report:
     ./mvnw license:aggregate-third-party-report
