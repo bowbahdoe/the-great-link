@@ -107,7 +107,7 @@ jobs:
           tree
       - name: Compress action step
         uses: a7ul/tar-action@v1.1.0
-        id: compress
+        id: zip-macos
         with:
           command: c
           files: |
@@ -115,7 +115,7 @@ jobs:
           outPath: the-great-link-macos.tar.gz
       - name: Compress action step
         uses: a7ul/tar-action@v1.1.0
-        id: compress
+        id: zip-ubuntu
         with:
           command: c
           files: |
