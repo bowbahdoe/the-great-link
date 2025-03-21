@@ -21,7 +21,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name:
-            the-great-link-macos-${{vars.NOW}}
+            the-great-link-macos-${{env.NOW}}
           path:
             target/generate
           overwrite:
@@ -43,7 +43,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name:
-            the-great-link-ubuntu-${{vars.NOW}}
+            the-great-link-ubuntu-${{env.NOW}}
           path:
             target/generate
           overwrite:
@@ -72,7 +72,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name:
-            the-great-link-windows-${{vars.NOW}}
+            the-great-link-windows-${{env.NOW}}
           path:
             target/generate
           overwrite:
@@ -86,15 +86,15 @@ jobs:
       - name: Download a single artifact
         uses: actions/download-artifact@v4
         with:
-          name: the-great-link-macos-${{vars.NOW}}
+          name: the-great-link-macos-${{env.NOW}}
       - name: Download a single artifact
         uses: actions/download-artifact@v4
         with:
-          name: the-great-link-ubuntu-${{vars.NOW}}
+          name: the-great-link-ubuntu-${{env.NOW}}
       - name: Download a single artifact
         uses: actions/download-artifact@v4
         with:
-          name: the-great-link-windows-${{vars.NOW}}
+          name: the-great-link-windows-${{env.NOW}}
       - name: Echo current date
         run: echo $NOW
       - name: List Files
@@ -103,6 +103,8 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          name: ${{ vars.NOW }}
+          name: ${{ env.NOW }}
           files:
-            windowsimg/windowsimg.zip
+            the-great-link-macos-${{env.NOW}}/the-great-link-macos-${{env.NOW}}.zip
+            | the-great-link-ubuntu-${{env.NOW}}/the-great-link-ubuntu-${{env.NOW}}.zip
+            | the-great-link-windows-${{env.NOW}}/the-great-link-windows-${{env.NOW}}.zip
