@@ -105,11 +105,31 @@ jobs:
       - name: List Files
         run:
           tree
+      - name: Compress action step
+        uses: a7ul/tar-action@v1.1.0
+        id: compress
+        with:
+          command: c
+          files: |
+            ./the-great-link-macos
+          outPath: the-great-link-macos.tar.gz
+      - name: Compress action step
+        uses: a7ul/tar-action@v1.1.0
+        id: compress
+        with:
+          command: c
+          files: |
+            ./the-great-link-ubuntu
+          outPath: the-great-link-ubuntu.tar.gz
+      - uses: vimtor/action-zip@v1.2
+        with:
+          files: the-great-link-windows
+          dest: the-great-link-windows.zip
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
           name: ${{ env.NOW }}
           files: |
-            the-great-link-macos
-            the-great-link-ubuntu
-            the-great-link-windows
+            the-great-link-macos.tar.gz
+            the-great-link-ubuntu.tar.gz
+            the-great-link-windows.zip
