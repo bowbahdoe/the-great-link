@@ -87,14 +87,19 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: the-great-link-macos
+          path: the-great-link-macos
       - name: Download a single artifact
         uses: actions/download-artifact@v4
         with:
           name: the-great-link-ubuntu
+          path:
+            the-great-link-ubuntu
       - name: Download a single artifact
         uses: actions/download-artifact@v4
         with:
           name: the-great-link-windows
+          path:
+            the-great-link-windows
       - name: Echo current date
         run: echo $NOW
       - name: List Files
@@ -105,6 +110,6 @@ jobs:
         with:
           name: ${{ env.NOW }}
           files: |
-            the-great-link-macos/the-great-link-macos.zip
-            the-great-link-ubuntu/the-great-link-ubuntu.zip
-            the-great-link-windows/the-great-link-windows.zip
+            the-great-link-macos
+            the-great-link-ubuntu
+            the-great-link-windows
