@@ -86,15 +86,15 @@ jobs:
       - name: Download a single artifact
         uses: actions/download-artifact@v4
         with:
-          name: the-great-link-macos-${{env.NOW}}
+          name: the-great-link-macos-${{env.NOW}}.zip
       - name: Download a single artifact
         uses: actions/download-artifact@v4
         with:
-          name: the-great-link-ubuntu-${{env.NOW}}
+          name: the-great-link-ubuntu-${{env.NOW}}.zip
       - name: Download a single artifact
         uses: actions/download-artifact@v4
         with:
-          name: the-great-link-windows-${{env.NOW}}
+          name: the-great-link-windows-${{env.NOW}}.zip
       - name: Echo current date
         run: echo $NOW
       - name: List Files
