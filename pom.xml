@@ -645,6 +645,95 @@
             <version>2024.07.19</version>
         </dependency>
 
+        <!-- https://github.com/citygml4j/citygml4j -->
+        <dependency>
+            <groupId>org.citygml4j</groupId>
+            <artifactId>citygml4j-core</artifactId>
+            <version>3.2.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.citygml4j</groupId>
+            <artifactId>citygml4j-xml</artifactId>
+            <version>3.2.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.citygml4j</groupId>
+            <artifactId>citygml4j-cityjson</artifactId>
+            <version>3.2.4</version>
+        </dependency>
+
+        <!-- https://github.com/square/gifencoder -->
+        <dependency>
+            <groupId>com.squareup</groupId>
+            <artifactId>gifencoder</artifactId>
+            <version>0.10.1</version>
+        </dependency>
+
+        <!-- https://github.com/auth0/java-jwt -->
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>4.5.0</version>
+        </dependency>
+
+        <!-- https://github.com/digitalfondue/basicxlsx -->
+        <dependency>
+            <groupId>ch.digitalfondue.basicxlsx</groupId>
+            <artifactId>basicxlsx</artifactId>
+            <version>0.7.1</version>
+        </dependency>
+
+        <!-- https://github.com/m-m-m/scanner -->
+        <dependency>
+            <groupId>io.github.m-m-m</groupId>
+            <artifactId>mmm-scanner</artifactId>
+            <version>0.9.11</version>
+        </dependency>
+
+        <!-- https://github.com/m-m-m/text -->
+        <dependency>
+            <groupId>io.github.m-m-m</groupId>
+            <artifactId>mmm-text-ascii</artifactId>
+            <version>0.9.11</version>
+        </dependency>
+
+        <!-- https://github.com/Zabuzard/Closy -->
+        <dependency>
+            <groupId>io.github.zabuzard.closy</groupId>
+            <artifactId>closy</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+
+        <!-- https://github.com/Zabuzard/Maglev -->
+        <dependency>
+            <groupId>io.github.zabuzard.maglev</groupId>
+            <artifactId>maglev</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <!-- https://github.com/nayuki/QR-Code-generator -->
+        <dependency>
+            <groupId>io.nayuki</groupId>
+            <artifactId>qrcodegen</artifactId>
+            <version>1.8.0</version>
+        </dependency>
+
+        <!-- https://github.com/elsci-io/multinomial-selection -->
+        <dependency>
+            <groupId>io.elsci.multinomial-selection</groupId>
+            <artifactId>multinomial-selection</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <!-- https://urin.sourceforge.net/ -->
+        <dependency>
+            <groupId>net.sourceforge.urin</groupId>
+            <artifactId>urin</artifactId>
+            <version>5.2</version>
+        </dependency>
+
         <!--
         <dependency>
             <groupId>org.freemarker</groupId>
