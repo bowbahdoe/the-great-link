@@ -33,7 +33,8 @@ generate: copy_deps
         --bind-services \
         --launcher update4j=org.update4j/org.update4j.Bootstrap \
         --launcher jarviz=org.kordamp.jarviz.cli/org.kordamp.jarviz.cli.Main \
-        --launcher jstage=dev.mccue.jstage/dev.mccue.jstage.JStage
+        --launcher jstage=dev.mccue.jstage/dev.mccue.jstage.JStage \
+        --launcher xjc=com.sun.tools.xjc/com.sun.tools.xjc.Driver
 
 gen_licenses_report:
     ./mvnw license:aggregate-third-party-report

@@ -126,6 +126,12 @@ That last step won't work yet, but if it did then there would be basically no do
 * [Generate QR Codes](https://github.com/nayuki/QR-Code-generator)
 * [Select the Most Probable Combinations of Elements](https://github.com/elsci-io/multinomial-selection)
 * [Parse and Generate URIs](https://urin.sourceforge.net/)
+* [Read and Write Fixed Length Files](https://jrecordbind.org/)
+* [Drive a Rule Engine](https://www.evrete.org/)
+* [Extract Links from Plain Text](https://github.com/robinst/autolink-java)
+* [Do More with Dates and Times](https://www.threeten.org/threeten-extra/)
+* [Handle Problems in a Standard Way](https://github.com/zalando/problem)
+* [Represent Units of Storage](https://github.com/metio/storage-units.java)
 * And More!
 
 ## Licensing

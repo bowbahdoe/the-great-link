@@ -311,7 +311,49 @@
 
         <dependency>
             <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-gfm-strikethrough</artifactId>
+            <version>0.24.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-heading-anchor</artifactId>
+            <version>0.24.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-image-attributes</artifactId>
+            <version>0.24.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-ins</artifactId>
+            <version>0.24.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-task-list-items</artifactId>
+            <version>0.24.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.commonmark</groupId>
             <artifactId>commonmark-ext-footnotes</artifactId>
+            <version>0.24.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-autolink</artifactId>
+            <version>0.24.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-yaml-front-matter</artifactId>
             <version>0.24.0</version>
         </dependency>
 
@@ -329,6 +371,7 @@
             <version>5.1.0</version>
         </dependency>
 
+        <!-- https://www.threeten.org/threeten-extra/ -->
         <dependency>
             <groupId>org.threeten</groupId>
             <artifactId>threeten-extra</artifactId>
@@ -733,6 +776,92 @@
             <artifactId>urin</artifactId>
             <version>5.2</version>
         </dependency>
+
+        <!-- https://jrecordbind.org/ -->
+        <dependency>
+            <groupId>org.fissore.jrecordbind</groupId>
+            <artifactId>jrecordbind</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.activation</groupId>
+            <artifactId>jakarta.activation-api</artifactId>
+            <version>2.1.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.angus</groupId>
+            <artifactId>angus-activation</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+
+        <!-- https://www.evrete.org/ -->
+        <dependency>
+            <groupId>org.evrete</groupId>
+            <artifactId>evrete-core</artifactId>
+            <version>4.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.evrete</groupId>
+            <artifactId>evrete-dsl-java</artifactId>
+            <version>4.0.3</version>
+        </dependency>
+
+        <!-- https://github.com/robinst/autolink-java -->
+        <dependency>
+            <groupId>org.nibor.autolink</groupId>
+            <artifactId>autolink</artifactId>
+            <version>0.11.0</version>
+        </dependency>
+
+        <!-- https://github.com/zalando/problem -->
+        <dependency>
+            <groupId>org.zalando</groupId>
+            <artifactId>problem</artifactId>
+            <version>0.27.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.zalando</groupId>
+            <artifactId>jackson-datatype-problem</artifactId>
+            <version>0.27.1</version>
+        </dependency>
+
+
+        <!-- https://github.com/metio/storage-units.java -->
+        <dependency>
+            <groupId>wtf.metio.storage-units</groupId>
+            <artifactId>storage-units-model</artifactId>
+            <version>2023.12.20</version>
+        </dependency>
+        <dependency>
+            <groupId>wtf.metio.storage-units</groupId>
+            <artifactId>storage-units-jackson</artifactId>
+            <version>2023.12.20</version>
+        </dependency>
+
+
+
+        <!--
+
+                 <dependency>
+            <groupId>nl.basjes.collections</groupId>
+            <artifactId>prefixmap</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.esotericsoftware</groupId>
+            <artifactId>kryo</artifactId>
+            <version>${kryo5.version}</version>
+        </dependency>
+
+
+         <dependency>
+        <groupId>wtf.metio.storage-units</groupId>
+        <artifactId>storage-units-jakarta</artifactId>
+        <version>${version.storage-units}</version>
+    </dependency> -->
 
         <!--
         <dependency>

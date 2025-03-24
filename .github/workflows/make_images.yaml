@@ -3,6 +3,7 @@ name: "The Great Link"
   push:
     tags:
       - v*
+  workflow_dispatch:
 jobs:
   build_macos:
     runs-on: macos-latest
@@ -13,7 +14,7 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          java-version: '23'
+          java-version: '24'
           distribution: 'adopt'
       - uses: extractions/setup-just@v2
       - name: Generate Linked Image
@@ -57,7 +58,7 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          java-version: '23'
+          java-version: '24'
           distribution: 'adopt'
       - uses: extractions/setup-just@v2
       - name: Get all Dependencies
@@ -68,7 +69,7 @@ jobs:
           java -p target/dependency --add-modules ALL-MODULE-PATH scripts/GetModules.java modnames.txt
       - name: Generate Linked Image
         run:
-          jlink --output target/generate --module-path target/dependency --add-modules "@modnames.txt" --bind-services --launcher update4j=org.update4j/org.update4j.Bootstrap --launcher jarviz=org.kordamp.jarviz.cli/org.kordamp.jarviz.cli.Main --launcher jstage=dev.mccue.jstage/dev.mccue.jstage.JStage
+          jlink --output target/generate --module-path target/dependency --add-modules "@modnames.txt" --bind-services --launcher update4j=org.update4j/org.update4j.Bootstrap --launcher jarviz=org.kordamp.jarviz.cli/org.kordamp.jarviz.cli.Main --launcher jstage=dev.mccue.jstage/dev.mccue.jstage.JStage --launcher xjc=com.sun.tools.xjc/com.sun.tools.xjc.Driver
       - uses: actions/upload-artifact@v4
         with:
           name:
