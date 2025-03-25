@@ -37,7 +37,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '23'
-          distribution: 'adopt'
+          distribution: 'corretto'
       - uses: extractions/setup-just@v2
       - name: Generate Linked Image
         run: just generate
@@ -58,8 +58,8 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          java-version: '24'
-          distribution: 'adopt'
+          java-version: '23'
+          distribution: 'corretto'
       - uses: extractions/setup-just@v2
       - name: Get all Dependencies
         run:
