@@ -130,7 +130,6 @@ That last step won't work yet, but if it did then there would be basically no do
 * [Drive a Rule Engine](https://www.evrete.org/)
 * [Extract Links from Plain Text](https://github.com/robinst/autolink-java)
 * [Do More with Dates and Times](https://www.threeten.org/threeten-extra/)
-* [Handle Problems in a Standard Way](https://github.com/zalando/problem)
 * [Represent Units of Storage](https://github.com/metio/storage-units.java)
 * And More!
 

@@ -816,7 +816,8 @@
             <version>0.11.0</version>
         </dependency>
 
-        <!-- https://github.com/zalando/problem -->
+        <!-- Dont want to include GSON
+        https://github.com/zalando/problem
         <dependency>
             <groupId>org.zalando</groupId>
             <artifactId>problem</artifactId>
@@ -826,7 +827,7 @@
             <groupId>org.zalando</groupId>
             <artifactId>jackson-datatype-problem</artifactId>
             <version>0.27.1</version>
-        </dependency>
+        </dependency> -->
 
 
         <!-- https://github.com/metio/storage-units.java -->
