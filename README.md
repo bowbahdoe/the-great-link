@@ -131,6 +131,7 @@ That last step won't work yet, but if it did then there would be basically no do
 * [Extract Links from Plain Text](https://github.com/robinst/autolink-java)
 * [Do More with Dates and Times](https://www.threeten.org/threeten-extra/)
 * [Represent Units of Storage](https://github.com/metio/storage-units.java)
+* [Mask Sensitive JSON](https://github.com/Breus/json-masker)
 * And More!
 
 ## Licensing
