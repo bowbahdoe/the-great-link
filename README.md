@@ -57,10 +57,10 @@ Download the link for your platform of choice, have your
 developers use it when developing your app, then link down to the
 libraries you actually used when deploying your app.
 
-⚠️Download URLs Coming Soon⚠️
-- [Windows x86]()
-- [Max arm]()
-- [Linux x86]()
+⚠️If you have any trouble with these, ⚠️
+- [Windows x86](https://github.com/bowbahdoe/the-great-link/releases/download/v2025.04.01/the-great-link-windows.zip)
+- [Max arm](https://github.com/bowbahdoe/the-great-link/releases/download/v2025.04.01/the-great-link-macos.tar.gz)
+- [Linux x86](https://github.com/bowbahdoe/the-great-link/releases/download/v2025.04.01/the-great-link-ubuntu.tar.gz)
 
 That last step won't work yet, but if it did then there would be basically no downside.
 
