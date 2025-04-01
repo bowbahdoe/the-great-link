@@ -59,7 +59,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '23'
-          distribution: 'corretto'
+          distribution: 'adopt'
       - uses: extractions/setup-just@v2
       - name: Get all Dependencies
         run:
@@ -110,7 +110,7 @@ jobs:
         uses: a7ul/tar-action@v1.1.0
         id: zip-macos
         with:
-          command: cp
+          command: c
           files: |
             ./the-great-link-macos
           outPath: the-great-link-macos.tar.gz
@@ -118,7 +118,7 @@ jobs:
         uses: a7ul/tar-action@v1.1.0
         id: zip-ubuntu
         with:
-          command: cp
+          command: c
           files: |
             ./the-great-link-ubuntu
           outPath: the-great-link-ubuntu.tar.gz
