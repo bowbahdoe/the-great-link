@@ -1,6 +1,6 @@
 # The Great Link
 
-⚠️⚠️The "lawyers" have "informed me" that I "cannot legally call this Java." It has not passed an Oracle ("TM" (™), "C" (©), and "R" (®)) [JCK](https://openjdk.org/groups/conformance/JckAccess/).
+⚠️⚠️I cannot legally call this Java. It has not passed an Oracle ("TM" (™), "C" (©), and "R" (®)) [JCK](https://openjdk.org/groups/conformance/JckAccess/).
 So this isn't Java.
 Remember that - this is not Java. Under no circumstances should this be mistaken with Java. This is not Java.
 Do not call it Java.⚠️⚠️
@@ -57,6 +57,7 @@ Download the link for your platform of choice, have your
 developers use it when developing your app, then link down to the
 libraries you actually used when deploying your app.
 
+⚠️Download URLs Coming Soon⚠️
 - [Windows x86]()
 - [Max arm]()
 - [Linux x86]()
@@ -133,6 +134,7 @@ That last step won't work yet, but if it did then there would be basically no do
 * [Represent Units of Storage](https://github.com/metio/storage-units.java)
 * [Mask Sensitive JSON](https://github.com/Breus/json-masker)
 * And More!
+
 
 ## Licensing
 
