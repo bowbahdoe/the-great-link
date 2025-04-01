@@ -59,7 +59,7 @@ libraries you actually used when deploying your app.
 
 ⚠️If you have any trouble with these, ⚠️
 - [Windows x86](https://github.com/bowbahdoe/the-great-link/releases/download/v2025.04.01/the-great-link-windows.zip)
-- [Max arm](https://github.com/bowbahdoe/the-great-link/releases/download/v2025.04.01/the-great-link-macos.tar.gz)
+- [Mac arm](https://github.com/bowbahdoe/the-great-link/releases/download/v2025.04.01/the-great-link-macos.tar.gz)
 - [Linux x86](https://github.com/bowbahdoe/the-great-link/releases/download/v2025.04.01/the-great-link-ubuntu.tar.gz)
 
 That last step won't work yet, but if it did then there would be basically no downside.
@@ -144,3 +144,6 @@ the image this creates.
 * All 3rd party libraries have licensing specified in their POMs
 and you can find a generated report on that licensing [here](https://musical-meringue-598fed.netlify.app/aggregate-third-party-report)
 and in the target/reports folder.
+
+![](./images/graphviz.svg)
+*Relationships Between Included Modules*
